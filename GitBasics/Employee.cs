@@ -11,5 +11,10 @@ namespace GitBasics
         public string FullName { get; set; }
         
         public string Address { get; set; }
+
+        public int GetEmployeeId()
+        {
+            return EmployeeId;
+        }
     }
 }
