@@ -9,12 +9,18 @@ namespace GitBasics
         public int EmployeeId { get; set; }
 
         public string FullName { get; set; }
-        
+
         public string Address { get; set; }
+
+        public Company EmployeeCompany { get; set; }
 
         public int GetEmployeeId()
         {
-            return EmployeeId;
+            if (EmployeeCompany != null)
+            {
+                return EmployeeId;
+            }
+            return 0;
         }
     }
 }
